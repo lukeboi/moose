@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lukefarritor/Documents/Github/moose/main.cpp
+iostream
+-
+memory
+-
+string
+-
+maddy/parser.h
+/Users/lukefarritor/Documents/Github/moose/maddy/parser.h
+

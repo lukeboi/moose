@@ -1,0 +1,36 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/lukefarritor/Documents/Github/moose
+CMake Deprecation Warning at include/maddy/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Error at include/maddy/CMakeLists.txt:58 (add_subdirectory):
+  add_subdirectory given source
+  "/Users/lukefarritor/Documents/Github/moose/include/maddy/libs/gtest/googlemock"
+  which is not an existing directory.
+
+
+CMake Deprecation Warning at include/maddy/libs/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.19)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/lukefarritor/Documents/Github/moose/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/lukefarritor/Documents/Github/moose/cmake-build-debug/CMakeFiles/CMakeError.log".

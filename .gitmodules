@@ -1,0 +1,3 @@
+[submodule "include/maddy"]
+	path = include/maddy
+	url = https://github.com/progsource/maddy.git
