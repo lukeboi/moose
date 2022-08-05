@@ -1,3 +1,6 @@
 [submodule "include/maddy"]
 	path = include/maddy
 	url = https://github.com/progsource/maddy.git
+[submodule "include/md4c"]
+	path = include/md4c
+	url = https://github.com/mity/md4c
