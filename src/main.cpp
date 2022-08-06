@@ -3,17 +3,24 @@
 #include <string>
 
 #include "include/md4c/src/md4c.h"
+#include "include/md4c/src/md4c-html.h"
+#include "include/md4c/src/entity.h"
+
+struct post {
+    std::string post_html;
+};
 
 int main() {
-    std::string s("# Hello World");
-    // config is optional
-//    std::shared_ptr<maddy::ParserConfig> config = std::make_shared<maddy::ParserConfig>();
-//    config->isEmphasizedParserEnabled = true; // default
-//    config->isHTMLWrappedInParagraph = true; // default
-//
-//    std::shared_ptr<maddy::Parser> parser = std::make_shared<maddy::Parser>(config);
-//    std::string htmlOutput = parser->Parse(markdownInput);
+    std::string s("# Hello World\n\nThis is a simple post.\n\n");
 
-    std::cout << "Hello, World!" << std::endl;
+    post* p = new post();
+
+    md_html(s.c_str(), s.size(), [](const MD_CHAR* html, MD_SIZE html_size, void* userdata) {
+        post* p = (post*)userdata;
+        p->post_html.append((const char*)html, html_size);
+    }, p, 0, 0);
+
+    std::cout << p->post_html << std::endl;
+    std::cout << "=== Run complete ===" << std::endl;
     return 0;
 }
