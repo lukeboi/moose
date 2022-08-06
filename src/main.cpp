@@ -22,19 +22,6 @@ std::string readfile(const std::string& filename) {
 int main(int argc, char * argv[]) {
     std::string filename = "costa.md";
     std::string s = readfile(filename);
-//    std::ifstream file(filename);
-//    if (file.is_open()) {
-//        while (file.good()) {
-//            std::string line;
-//            std::getline(file, line);
-//            s += line + "\n";
-//        }
-//        file.close();
-//    }
-//    else {
-//        std::cout << "Unable to open file: " << filename << std::endl;
-//        return 1;
-//    }
 
     post* p = new post();
 
