@@ -1,5 +1,11 @@
 #!/bin/bash
-set -e
+# set -e
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+  echo "PLATFORM: LINUX"
+
+fi
+
 
 cd ~/Documents/Github/moose
 echo "▶︎▶︎▶︎▶ 𝐁 𝐔 𝐈 𝐋 𝐃 𝐈 𝐍 𝐆 ︎◀︎◀︎◀︎◀︎"
