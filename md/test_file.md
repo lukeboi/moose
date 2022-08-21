@@ -1,5 +1,6 @@
-# Test post
-
+Test post
+html_out/test_post.html
+This is the actual start of the post
 please ignore
 
 *italics* **bold**
